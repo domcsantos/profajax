@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 1 - Prof Ajax</title>
+</head>
+
+<body>
+
+    <a href='index.html'>HOME</a> |
+    <a href='musicas.html'>Músicas para Programação</a> |
+    <a href='aulagratis.html'>Aula Grátis</a> |
+    <a href="planos.html">Planos</a> |
+    <a href="contato.html">Contato</a> <br>
+    <br>
+
+    <form>
+        <legend>CONTATO</legend>
+        <p>Deseja um contato para falar com o professor?</p>
+        <label for="sim">Sim</label>
+        <input type="checkbox" id="sim" name="opcao" value="sim" onclick="mostrarMensagem()">
+        <br>
+        <label for="nao">Não</label>
+        <input type="checkbox" id="nao" name="opcao" value="nao">
+       
+      <script>
+        function mostrarMensagem() {
+          const mensagem = document.createElement('p');
+          mensagem.textContent = 'O email para contato com o professor é: alcides.junior@cruzeirodosul.edu.br !';
+          document.body.appendChild(mensagem);
+        }
+      </script>
+    </form>
+    
+    </body>
+    </html>
+    
